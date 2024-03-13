@@ -26,7 +26,8 @@ h2 {
 header {
     background:#ffffff;
     width:100%;  
-    text-align: center; 
+    text-align: center;
+    white-space: nowrap;
     font-weight: bold; 
     position: fixed; 
     top: 0;   
@@ -434,7 +435,7 @@ footer #flex-container {
 @media only screen and (min-width: 600px) { 
 
     header {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .iterateEffects {

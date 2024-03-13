@@ -12,7 +12,7 @@ function scrollFunction() {
     document.getElementById("filter").style.marginTop = "120px";
     document.getElementById("filter").style.padding = "10px 14px 10px 14px";
     document.getElementById("MQ").src = "./images/MQ.png";
-    document.getElementById("MQ").style.height = "3.3em";
+    document.getElementById("MQ").style.height = "3.5em";
     }
 }
 
