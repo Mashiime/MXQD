@@ -27,7 +27,7 @@
                 <ul >
                     <li><a><div><button class="iterateEffects projtrs">-Projects-</button></div></a></li>
                     <li><a><div><button class="iterateEffects mq"><img id="MQ" src="./images/MQ.png" alt="" loading="lazy" style="height: 3.5em; transition: 0.3s;"></button></div></a></li>
-                    <li><a><div><button class="iterateEffects filtrs" onclick="Click()">-about-</button></div></a></li>
+                    <li><a><div><button class="iterateEffects filtrs">-about-</button></div></a></li>
                 </ul>
             </nav>
         </header>
@@ -54,7 +54,7 @@
         <div class="posts filterDiv Brand Illu BER" onclick="changeImageBER(), filterSelection('BER')">
              <div onclick="changeImageBER2(), filterSelection('all'), addHoverBER()" class="close-section">×</div>    
             <article>
-                <a id="hovBER" class="hover" onclick="suppHoverBER()">
+                <a id="hovBER" class="hover" onclick="suppHoverBER(), Up()">
                     <div class="wrapperContent">
                         <div class="content">
                              <h2>BER'TEK</h2>
@@ -69,7 +69,7 @@
         <div class="posts filterDiv Brand EVO" onclick="changeImageEVO(), filterSelection('EVO')">
             <div onclick="changeImageEVO2(), filterSelection('all'), addHoverEVO()" class="close-section">×</div>    
             <article>
-                <a id="hovEVO" class="hover" onclick="suppHoverEVO()">
+                <a id="hovEVO" class="hover" onclick="suppHoverEVO(), Up()">
                     <div class="wrapperContent">
                         <div class="content">
                             <h2>EVO FESTIVAL</h2>
@@ -82,9 +82,9 @@
         </div>
 
         <div class="posts filterDiv Illu NAN" onclick="changeImageNAN(), filterSelection('NAN')">
-            <div class="close-section" onclick="changeImageNAN2(), filterSelection('all'), addHoverNAN()">×</div>    
+            <div class="close-section" onclick="changeImageNAN2(), filterSelection('all'), addHoverNAN(), HideGifNAN()">×</div>    
             <article>
-                <a id="hovNAN" class="hover" onclick="suppHoverNAN()">
+                <a id="hovNAN" class="hover" onclick="suppHoverNAN(), Up(), ShowGifNAN()">
                     <div class="wrapperContent">
                         <div class="content">
                             <h2>SOGELINK</h2>
@@ -92,15 +92,15 @@
                         </div>
                     </div>
                     <img id="imgNAN" src="./images/Home/FRESNAN.jpg" alt="" loading="lazy" />
-                    <img id="imgNAN2" src=" " loading="lazy" />
+                    <img id="imgNAN2" src="./images/Posts/FRESNAN2.gif" loading="lazy" style="display: none;"/>
                 </a>
         </article>
         </div>
 
         <div class="posts filterDiv Motion Illu LZ" onclick="changeImageLZ(), filterSelection('LZ')">
-            <div class="close-section" onclick="changeImageLZ2(), filterSelection('all'), addHoverLZ()">×</div>    
+            <div class="close-section" onclick="changeImageLZ2(), filterSelection('all'), addHoverLZ(), HideGifLZ()">×</div>    
             <article>
-                <a id="hovLZ" class="hover" onclick="suppHoverLZ()">
+                <a id="hovLZ" class="hover" onclick="suppHoverLZ(), Up(),ShowGifLZ()">
                     <div class="wrapperContent">
                         <div class="content">
                             <h2>LAZY BOY</h2>
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                     <img id="imgLZ" src="./images/Home/LZ.gif" alt="" loading="lazy" />
-                    <img id="imgLZ2" src=" " loading="lazy" />
+                    <img id="imgLZ2" src="./images/Posts/LZ2.gif" loading="lazy" style="display: none;"/>
                 </a>
         </article>
         </div>
@@ -116,7 +116,7 @@
         <div class="posts filterDiv Brand Web Motion COM" onclick="changeImageCOM(), filterSelection('COM')">
             <div class="close-section" onclick="changeImageCOM2(), filterSelection('all'), addHoverCOM()">×</div>
             <article>
-                <a id="hovCOM" class="hover" onclick="suppHoverCOM()">
+                <a id="hovCOM" class="hover" onclick="suppHoverCOM(), Up()">
                     <div class="wrapperContent">
                         <div class="content">
                             <h2>COMMENCAL</h2>
@@ -129,9 +129,9 @@
         </div>
 
         <div class="posts filterDiv Illu Motion FL" onclick="changeImageFL(), filterSelection('FL')">
-            <div class="close-section" onclick="changeImageFL2(), filterSelection('all'), addHoverFL()">×</div>
+            <div class="close-section" onclick="changeImageFL2(), filterSelection('all'), addHoverFL(), HideGifFL()">×</div>
             <article>
-                <a id="hovFL" class="hover" onclick="suppHoverFL()">
+                <a id="hovFL" class="hover" onclick="suppHoverFL(), Up(), ShowGifFL()">
                     <div class="wrapperContent">
                         <div class="content">
                             <h2>FLOWERS</h2>
@@ -139,15 +139,15 @@
                         </div>
                     </div>
                     <img id="imgFL" src="./images/Home/FL.gif" alt="" loading="lazy" />
-                    <img id="imgFL2" src=" " loading="lazy" />
+                    <img id="imgFL2" src="./images/Posts/FL2.gif" loading="lazy" style="display: none;"/>
                 </a>
         </article>
         </div>
 
         <div class="posts filterDiv Illu ULB" onclick="changeImageULB(), filterSelection('ULB')">
-            <div class="close-section" onclick="changeImageULB2(), filterSelection('all'), addHoverULB()">×</div>    
+            <div class="close-section" onclick="changeImageULB2(), filterSelection('all'), addHoverULB(), HideGifULB()">×</div>    
             <article>
-                <a id="hovULB" class="hover" onclick="suppHoverULB()">
+                <a id="hovULB" class="hover" onclick="suppHoverULB(), Up(), ShowGifULB()">
                     <div class="wrapperContent">
                         <div class="content">
                             <h2>ULB</h2>
@@ -155,15 +155,15 @@
                         </div>
                     </div>
                     <img id="imgULB" src="./images/Home/FRESULB.jpg" alt="" loading="lazy" />
-                    <img id="imgULB2" src=" " loading="lazy" />
+                    <img id="imgULB2" src="./images/Posts/ULB2.gif" loading="lazy" style="display: none;"/>
                 </a>
         </article>
         </div>
 
         <div class="posts filterDiv Motion Web PAN" onclick="changeImagePAN(), filterSelection('PAN')">
-            <div class="close-section" onclick="changeImagePAN2(), filterSelection('all'), addHoverPAN()">×</div>    
+            <div class="close-section" onclick="changeImagePAN2(), filterSelection('all'), addHoverPAN(), HideGifPAN()">×</div>    
             <article>
-                <a id="hovPAN" class="hover" onclick="suppHoverPAN()">
+                <a id="hovPAN" class="hover" onclick="suppHoverPAN(), Up(), ShowGifPAN()">
                     <div class="wrapperContent">
                         <div class="content">
                             <h2>PANÂME</h2>
@@ -171,7 +171,7 @@
                         </div>
                     </div>
                     <img id="imgPAN" src="./images/Home/PAN.jpg" alt="" loading="lazy" />
-                    <img id="imgPAN2" src=" " loading="lazy" />
+                    <img id="imgPAN2" src="./images/Posts/PAN2.gif" loading="lazy" style="display: none;"/>
                 </a>
         </article>
         </div>
@@ -179,7 +179,7 @@
         <div class="posts filterDiv Brand IF" onclick="changeImageIF(), filterSelection('IF')">
             <div class="close-section" onclick="changeImageIF2(), filterSelection('all'), addHoverIF()">×</div>    
             <article>
-                <a id="hovIF" class="hover" onclick="suppHoverIF()">
+                <a id="hovIF" class="hover" onclick="suppHoverIF(), Up()">
                     <div class="wrapperContent">
                         <div class="content">
                             <h2>IMAGINARIUM</h2>
@@ -193,9 +193,9 @@
         </div>
 
         <div class="posts filterDiv Motion SX" onclick="changeImageSX(), filterSelection('SX')">
-            <div class="close-section" onclick="changeImageSX2(), filterSelection('all'), addHoverSX()">×</div>
+            <div class="close-section" onclick="changeImageSX2(), filterSelection('all'), addHoverSX(), HideGifSX()">×</div>
             <article>
-                <a id="hovSX" class="hover" onclick="suppHoverSX()">
+                <a id="hovSX" class="hover" onclick="suppHoverSX(), Up(), ShowGifSX()">
                     <div class="wrapperContent">
                         <div class="content">
                             <h2>SMOOTH</h2>
@@ -204,7 +204,7 @@
                         </div>
                     </div>
                     <img id="imgSX" src="./images/Home/SX.gif" alt="" loading="lazy" />
-                    <img id="imgSX2" src=" " loading="lazy" />
+                    <img id="imgSX2" src="./images/Posts/SX2.gif" loading="lazy" style="display: none;"/>
                 </a>
         </article>
         </div>
@@ -212,7 +212,7 @@
         <div class="posts filterDiv Motion HEL" onclick="changeImageHEL(), filterSelection('HEL')">
             <div class="close-section" onclick="changeImageHEL2(), filterSelection('all'), addHoverHEL()">×</div>    
             <article>
-                <a id="hovHEL" class="hover" onclick="suppHoverHEL()">
+                <a id="hovHEL" class="hover" onclick="suppHoverHEL(), Up()">
                     <div class="wrapperContent">
                         <div class="content">
                             <h2>ULB HELSCI</h2>
@@ -227,7 +227,7 @@
         <div class="posts filterDiv Brand SF" onclick="changeImageSF(), filterSelection('SF')">
             <div class="close-section" onclick="changeImageSF2(), filterSelection('all'), addHoverSF()">×</div>    
             <article>
-                <a id="hovSF" class="hover" onclick="suppHoverSF()">
+                <a id="hovSF" class="hover" onclick="suppHoverSF(), Up()">
                     <div class="wrapperContent">
                         <div class="content">
                             <h2>SUBLIM FACTORY</h2>
@@ -240,9 +240,9 @@
         </div>
 
         <div class="posts filterDiv Brand Motion Web SUP" onclick="changeImageSUP(), filterSelection('SUP')">
-            <div class="close-section" onclick="changeImageSUP2(), filterSelection('all'), addHoverSUP()">×</div>    
+            <div class="close-section" onclick="changeImageSUP2(), filterSelection('all'), addHoverSUP(), HideGifSUP()">×</div>    
             <article>
-                <a id="hovSUP" class="hover" onclick="suppHoverSUP()">
+                <a id="hovSUP" class="hover" onclick="suppHoverSUP(), Up(), ShowGifSUP()">
                     <div class="wrapperContent">
                         <div class="content">
                             <h2>SUPERPITCH</h2>
@@ -250,7 +250,7 @@
                         </div>
                     </div>
                     <img id="imgSUP" src="./images/Home/SUP.jpg" alt="" loading="lazy" />
-                    <img id="imgSUP2" src=" " loading="lazy" />
+                    <img id="imgSUP2" src="./images/Posts/SUP2.gif" loading="lazy" style="display: none;"/>
                 </a>
         </article>
         </div>
@@ -258,7 +258,7 @@
         <div class="posts filterDiv Brand TA" onclick="changeImageTA(), filterSelection('TA')">
             <div class="close-section" onclick="changeImageTA2(), filterSelection('all'), addHoverTA()">×</div>    
             <article>
-                <a id="hovTA" class="hover" onclick="suppHoverTA()">
+                <a id="hovTA" class="hover" onclick="suppHoverTA(), Up()">
                     <div class="wrapperContent">
                         <div class="content">
                             <h2>TOURAND</h2>
@@ -267,7 +267,6 @@
                         </div>
                     </div>
                     <img id="imgTA" src="./images/Home/TA.jpg" alt="" loading="lazy" />
-                    <img id="imgTA2" src=" " loading="lazy" />
                 </a>
         </article>
         </div>
@@ -275,7 +274,7 @@
         <div class="posts filterDiv Brand Illu ZEP" onclick="changeImageZEP(), filterSelection('ZEP')">
             <div class="close-section" onclick="changeImageZEP2(), filterSelection('all'), addHoverZEP()">×</div>    
             <article>
-                <a id="hovZEP" class="hover" onclick="suppHoverZEP()">
+                <a id="hovZEP" class="hover" onclick="suppHoverZEP(), Up()">
                     <div class="wrapperContent">
                         <div class="content">
                             <h2>ZÉPARTI</h2>
@@ -283,7 +282,6 @@
                         </div>
                     </div>
                     <img id="imgZEP" src="./images/Home/ZEP.jpg" alt="" loading="lazy" />
-                    <img id="imgZEP2" src=" " loading="lazy" />
                 </a>
         </article>
         </div>

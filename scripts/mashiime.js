@@ -20,10 +20,6 @@ function scrollFunction() {
 
 // Order Button
 
-function Click() {
-  document.getElementsByClassName("filtrs").disabled= true;
-}
-
 function OrderBtn() {
   if (document.getElementsByClassName("filtrs").disabled= false) { 
     document.getElementsByClassName("mq").disabled= true;
@@ -35,6 +31,11 @@ function OrderBtn() {
     document.getElementsByClassName("projtrs").disabled= false; 
   }
 
+}
+
+//Remonter la page après click
+function Up(){
+   $("html, body").animate({scrollTop: 0},"slow");
 }
 
 
@@ -122,18 +123,36 @@ function addHoverEVO() {
     //SX
 
 function changeImageSX() {
-  if (document.getElementById("imgSX").src = "./images/Home/SX.gif", document.getElementById("imgSX2").src = " "){
-      document.getElementById("imgSX").src = "./images/Posts/SX1.jpg", document.getElementById("imgSX2").src = "./images/Posts/SX2.gif";
+  if (document.getElementById("imgSX").src = "./images/Home/SX.gif"){
+      document.getElementById("imgSX").src = "./images/Posts/SX1.jpg";
   } else {
-      document.getElementById("imgSX").src = "./images/Home/SX.gif", document.getElementById("imgSX2").src = " ";
+      document.getElementById("imgSX").src = "./images/Home/SX.gif";
   }
 }
 function changeImageSX2() {
-  if (document.getElementById("imgSX").src = "./images/Posts/SX1.jpg", document.getElementById("imgSX2").src = "./images/Posts/SX2.gif" ){
-    document.getElementById("imgSX").src = "./images/Home/SX.gif", document.getElementById("imgSX2").src = " ";
+  if (document.getElementById("imgSX").src = "./images/Posts/SX1.jpg"){
+    document.getElementById("imgSX").src = "./images/Home/SX.gif";
   } else {
-    document.getElementById("imgSX").src = "./images/Posts/SX1.jpg", document.getElementById("imgSX2").src = "./images/Posts/SX2.gif" ;
+    document.getElementById("imgSX").src = "./images/Posts/SX1.jpg";
   }
+}
+
+function ShowGifSX() {
+var x = document.getElementById('imgSX2');
+if (x.style.display === 'block') {
+  x.style.display = 'none';
+} else {
+  x.style.display = 'block';
+}
+}
+
+function HideGifSX() {
+var x = document.getElementById('imgSX2');
+if (x.style.display === 'none') {
+  x.style.display = 'block';
+} else {
+  x.style.display = 'none';
+}
 }
 
 var hovSX = document.getElementById("hovSX");
@@ -148,18 +167,36 @@ function addHoverSX() {
   //FRESNAN
 
 function changeImageNAN() {
-  if (document.getElementById("imgNAN").src = "./images/Home/FRESNAN.jpg", document.getElementById("imgNAN2").src = " "){
-      document.getElementById("imgNAN").src = "./images/Posts/FRESNAN1.jpg", document.getElementById("imgNAN2").src = "./images/Posts/FRESNAN2.gif";
+  if (document.getElementById("imgNAN").src = "./images/Home/FRESNAN.jpg"){
+      document.getElementById("imgNAN").src = "./images/Posts/FRESNAN1.jpg";
   } else {
-      document.getElementById("imgNAN").src = "./images/Home/FRESNAN.jpg", document.getElementById("imgNAN2").src = " ";
+      document.getElementById("imgNAN").src = "./images/Home/FRESNAN.jpg";
   } 
 }
 function changeImageNAN2() {
-  if (document.getElementById("imgNAN").src = "./images/Posts/FRESNAN1.jpg", document.getElementById("imgNAN2").src = "./images/Posts/FRESNAN2.gif" ){
-      document.getElementById("imgNAN").src = "./images/Home/FRESNAN.jpg", document.getElementById("imgNAN2").src = " ";
+  if (document.getElementById("imgNAN").src = "./images/Posts/FRESNAN1.jpg" ){
+      document.getElementById("imgNAN").src = "./images/Home/FRESNAN.jpg";
   } else {
-      document.getElementById("imgNAN").src = "./images/Posts/FRESNAN1.jpg", document.getElementById("imgNAN2").src = "./images/Posts/FRESNAN2.gif" ;
+      document.getElementById("imgNAN").src = "./images/Posts/FRESNAN1.jpg" ;
   }
+}
+
+function ShowGifNAN() {
+var x = document.getElementById('imgNAN2');
+if (x.style.display === 'block') {
+  x.style.display = 'none';
+} else {
+  x.style.display = 'block';
+}
+}
+
+function HideGifNAN() {
+var x = document.getElementById('imgNAN2');
+if (x.style.display === 'none') {
+  x.style.display = 'block';
+} else {
+  x.style.display = 'none';
+}
 }
 
 var hovNAN = document.getElementById("hovNAN");
@@ -224,18 +261,36 @@ function addHoverCOM() {
   //FL
 
 function changeImageFL() {
-  if (document.getElementById("imgFL").src = "./images/Home/FL.gif", document.getElementById("imgFL2").src = " "){
-      document.getElementById("imgFL").src = "./images/Posts/FL1.jpg", document.getElementById("imgFL2").src = "./images/Posts/FL2.gif";
+  if (document.getElementById("imgFL").src = "./images/Home/FL.gif"){
+      document.getElementById("imgFL").src = "./images/Posts/FL1.jpg";
   } else {
-      document.getElementById("imgFL").src = "./images/Home/FL.gif", document.getElementById("imgFL2").src = " ";
+      document.getElementById("imgFL").src = "./images/Home/FL.gif";
   } 
 }
 function changeImageFL2() {
-  if (document.getElementById("imgFL").src = "./images/Posts/FL1.jpg", document.getElementById("imgFL2").src = "./images/Posts/FL2.gif" ){
-      document.getElementById("imgFL").src = "./images/Home/FL.gif", document.getElementById("imgFL2").src = " ";
+  if (document.getElementById("imgFL").src = "./images/Posts/FL1.jpg" ){
+      document.getElementById("imgFL").src = "./images/Home/FL.gif";
   } else {
-      document.getElementById("imgFL").src = "./images/Posts/FL1.jpg", document.getElementById("imgFL2").src = "./images/Posts/FL2.gif" ;
+      document.getElementById("imgFL").src = "./images/Posts/FL1.jpg" ;
   }
+}
+
+function ShowGifFL() {
+var x = document.getElementById('imgFL2');
+if (x.style.display === 'block') {
+  x.style.display = 'none';
+} else {
+  x.style.display = 'block';
+}
+}
+
+function HideGifFL() {
+var x = document.getElementById('imgFL2');
+if (x.style.display === 'none') {
+  x.style.display = 'block';
+} else {
+  x.style.display = 'none';
+}
 }
 
   var hovFL = document.getElementById("hovFL");
@@ -249,18 +304,36 @@ function addHoverFL() {
   //FRESULB
 
 function changeImageULB() {
-  if (document.getElementById("imgULB").src = "./images/Home/FRESULB.jpg", document.getElementById("imgULB2").src = " "){
-      document.getElementById("imgULB").src = "./images/Posts/ULB1.jpg", document.getElementById("imgULB2").src = "./images/Posts/ULB2.gif";
+  if (document.getElementById("imgULB").src = "./images/Home/FRESULB.jpg"){
+      document.getElementById("imgULB").src = "./images/Posts/ULB1.jpg";
   } else {
-      document.getElementById("imgULB").src = "./images/Home/FRESULB.jpg", document.getElementById("imgULB2").src = " ";
+      document.getElementById("imgULB").src = "./images/Home/FRESULB.jpg";
   } 
 }
 function changeImageULB2() {
-  if (document.getElementById("imgULB").src = "./images/Posts/ULB1.jpg", document.getElementById("imgULB2").src = "./images/Posts/ULB2.gif" ){
-      document.getElementById("imgULB").src = "./images/Home/FRESULB.jpg", document.getElementById("imgULB2").src = " ";
+  if (document.getElementById("imgULB").src = "./images/Posts/ULB1.jpg" ){
+      document.getElementById("imgULB").src = "./images/Home/FRESULB.jpg";
   } else {
-      document.getElementById("imgULB").src = "./images/Posts/ULB1.jpg", document.getElementById("imgULB2").src = "./images/Posts/ULB2.gif" ;
+      document.getElementById("imgULB").src = "./images/Posts/ULB1.jpg" ;
   }
+}
+
+function ShowGifULB() {
+var x = document.getElementById('imgULB2');
+if (x.style.display === 'block') {
+  x.style.display = 'none';
+} else {
+  x.style.display = 'block';
+}
+}
+
+function HideGifULB() {
+var x = document.getElementById('imgULB2');
+if (x.style.display === 'none') {
+  x.style.display = 'block';
+} else {
+  x.style.display = 'none';
+}
 }
 
 var hovULB = document.getElementById("hovULB");
@@ -325,18 +398,36 @@ function addHoverIF() {
   //LZ
 
 function changeImageLZ() {
-  if (document.getElementById("imgLZ").src = "./images/Home/LZ.gif", document.getElementById("imgLZ2").src = " "){
-      document.getElementById("imgLZ").src = "./images/Posts/LZ1.jpg", document.getElementById("imgLZ2").src = "./images/Posts/LZ2.gif";
+  if (document.getElementById("imgLZ").src = "./images/Home/LZ.gif"){
+      document.getElementById("imgLZ").src = "./images/Posts/LZ1.jpg";
   } else {
-      document.getElementById("imgLZ").src = "./images/Home/LZ.gif", document.getElementById("imgLZ2").src = " ";
+      document.getElementById("imgLZ").src = "./images/Home/LZ.gif";
   } 
 }
 function changeImageLZ2() {
-  if (document.getElementById("imgLZ").src = "./images/Posts/LZ1.jpg", document.getElementById("imgLZ2").src = "./images/Posts/LZ2.gif" ){
-      document.getElementById("imgLZ").src = "./images/Home/LZ.gif", document.getElementById("imgLZ2").src = " ";
+  if (document.getElementById("imgLZ").src = "./images/Posts/LZ1.jpg" ){
+      document.getElementById("imgLZ").src = "./images/Home/LZ.gif";
   } else {
-      document.getElementById("imgLZ").src = "./images/Posts/LZ1.jpg", document.getElementById("imgLZ2").src = "./images/Posts/LZ2.gif" ;
+      document.getElementById("imgLZ").src = "./images/Posts/LZ1.jpg" ;
   }
+}
+
+function ShowGifLZ() {
+var x = document.getElementById('imgLZ2');
+if (x.style.display === 'block') {
+  x.style.display = 'none';
+} else {
+  x.style.display = 'block';
+}
+}
+
+function HideGifLZ() {
+var x = document.getElementById('imgLZ2');
+if (x.style.display === 'none') {
+  x.style.display = 'block';
+} else {
+  x.style.display = 'none';
+}
 }
 
   var hovLZ = document.getElementById("hovLZ");
@@ -350,18 +441,36 @@ function addHoverLZ() {
   //PAN
 
 function changeImagePAN() {
-  if (document.getElementById("imgPAN").src = "./images/Home/PAN.jpg", document.getElementById("imgPAN2").src = " "){
-      document.getElementById("imgPAN").src = "./images/Posts/PAN1.jpg", document.getElementById("imgPAN2").src = "./images/Posts/PAN2.gif";
+  if (document.getElementById("imgPAN").src = "./images/Home/PAN.jpg"){
+      document.getElementById("imgPAN").src = "./images/Posts/PAN1.jpg";
   } else {
-      document.getElementById("imgPAN").src = "./images/Home/PAN.jpg", document.getElementById("imgPAN2").src = " ";
+      document.getElementById("imgPAN").src = "./images/Home/PAN.jpg";
   } 
 }
 function changeImagePAN2() {
-  if (document.getElementById("imgPAN").src = "./images/Posts/PAN1.jpg", document.getElementById("imgPAN2").src = "./images/Posts/PAN2.gif" ){
-      document.getElementById("imgPAN").src = "./images/Home/PAN.jpg", document.getElementById("imgPAN2").src = " ";
+  if (document.getElementById("imgPAN").src = "./images/Posts/PAN1.jpg" ){
+      document.getElementById("imgPAN").src = "./images/Home/PAN.jpg";
   } else {
-      document.getElementById("imgPAN").src = "./images/Posts/PAN1.jpg", document.getElementById("imgPAN2").src = "./images/Posts/PAN2.gif" ;
+      document.getElementById("imgPAN").src = "./images/Posts/PAN1.jpg" ;
   }
+}
+
+function ShowGifPAN() {
+var x = document.getElementById('imgPAN2');
+if (x.style.display === 'block') {
+  x.style.display = 'none';
+} else {
+  x.style.display = 'block';
+}
+}
+
+function HideGifPAN() {
+var x = document.getElementById('imgPAN2');
+if (x.style.display === 'none') {
+  x.style.display = 'block';
+} else {
+  x.style.display = 'none';
+}
 }
 
   var hovPAN = document.getElementById("hovPAN");
@@ -401,18 +510,36 @@ function addHoverSF() {
   //SUP
 
 function changeImageSUP() {
-  if (document.getElementById("imgSUP").src = "./images/Home/SUP.jpg", document.getElementById("imgSUP2").src = " "){
-      document.getElementById("imgSUP").src = "./images/Posts/SUP1.jpg", document.getElementById("imgSUP2").src = "./images/Posts/SUP2.gif";
+  if (document.getElementById("imgSUP").src = "./images/Home/SUP.jpg"){
+      document.getElementById("imgSUP").src = "./images/Posts/SUP1.jpg";
   } else {
-      document.getElementById("imgSUP").src = "./images/Home/SUP.jpg", document.getElementById("imgSUP2").src = " ";
+      document.getElementById("imgSUP").src = "./images/Home/SUP.jpg";
   } 
 }
 function changeImageSUP2() {
-  if (document.getElementById("imgSUP").src = "./images/Posts/SUP1.jpg", document.getElementById("imgSUP2").src = "./images/Posts/SUP2.gif" ){
-      document.getElementById("imgSUP").src = "./images/Home/SUP.jpg", document.getElementById("imgSUP2").src = " ";
+  if (document.getElementById("imgSUP").src = "./images/Posts/SUP1.jpg" ){
+      document.getElementById("imgSUP").src = "./images/Home/SUP.jpg";
   } else {
-      document.getElementById("imgSUP").src = "./images/Posts/SUP1.jpg", document.getElementById("imgSUP2").src = "./images/Posts/SUP2.gif" ;
+      document.getElementById("imgSUP").src = "./images/Posts/SUP1.jpg" ;
   }
+}
+
+function ShowGifSUP() {
+var x = document.getElementById('imgSUP2');
+if (x.style.display === 'block') {
+  x.style.display = 'none';
+} else {
+  x.style.display = 'block';
+}
+}
+
+function HideGifSUP() {
+var x = document.getElementById('imgSUP2');
+if (x.style.display === 'none') {
+  x.style.display = 'block';
+} else {
+  x.style.display = 'none';
+}
 }
 
   var hovSUP = document.getElementById("hovSUP");
