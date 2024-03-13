@@ -50,7 +50,7 @@ header ul li a { display:table-cell; color:#000000; }
   color:#000000;
   background-color: #00000000;
   font-family: kaneda-gothic,sans-serif; font-weight: 400; font-style: normal;
-  display:table-cell; letter-spacing: 0.2em;
+  display:table-cell; 
 }
 
 #filter { font-family: kaneda-gothic,sans-serif;
@@ -439,7 +439,8 @@ footer #flex-container {
   }
 
   .iterateEffects {
-    font-size: 55px;
+    font-size: 3.2rem; 
+    letter-spacing: 0.15em;
   }
 
   .posts{
@@ -504,6 +505,7 @@ footer #flex-container {
 
   .iterateEffects {
     font-size: 30px;
+    letter-spacing: 0.2em;
   }
 
   .bouton {
