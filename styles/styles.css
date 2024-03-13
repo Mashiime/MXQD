@@ -22,7 +22,7 @@ h2 {
 
 /* HEADER */
 
-header a:hover, li a:hover { opacity:.7; }
+
 header {
     background:#ffffff;
     width:100%;  
@@ -32,11 +32,10 @@ header {
     top: 0;   
     transition: 0.3s; 
     z-index: 10 ;
-    font-size: 45px;
   }
 header a { color:#000000; font-family: kaneda-gothic,sans-serif; font-weight: 400; font-style: normal; }
 header ul { padding-top: 5px; padding-bottom: 5px;}
-header ul li { display:inline-block; letter-spacing: 0.2em; vertical-align: middle; align-items: center; }
+header ul li { display:inline-block; letter-spacing: 0.2em; align-items: center; vertical-align: middle;}
 header ul li a { display:table-cell; color:#000000; }
 
 
@@ -46,7 +45,6 @@ header ul li a { display:table-cell; color:#000000; }
   text-transform: uppercase;
   top: 0px;   
   transition: 0.3s; 
-  font-size: 30px;
   border: none;
   color:#000000;
   background-color: #00000000;
@@ -84,21 +82,7 @@ header ul li a { display:table-cell; color:#000000; }
     opacity: 0.6;
     transition: 0.3s;
 }
-  
-.btn .active{
-  background-color: #00000000;
-  border: none;
-  color: rgb(162, 31, 31);
-  font-family: kaneda-gothic;
-  text-transform: uppercase;
-  padding: 0;
-  text-align: center;
-  font-size: 14px;
-  letter-spacing: 0.2em;
-  margin: 4px 2px;
-  opacity: 0.6;
-  transition: 0.3s;
-}
+
 
 .btn:hover {opacity: 1}
 
@@ -199,7 +183,6 @@ p { font-family: "AdobeCleanExBold";}
 .pt-page-2 {
   background-color: #ffffff;
   position: absolute;
-  font-size: 4.4em;
   line-height: 1em;
   margin: 0;
   width: 100%;
@@ -222,29 +205,25 @@ p { font-family: "AdobeCleanExBold";}
   letter-spacing: 2px;
   }
 
-  .pt-page-2 article p strong {
-    font-weight: 600;
-  }
-  .pt-page-2 article .contentabout {
-    padding: 0 60px;
-    width: 50%;
-    box-sizing: border-box;
-    display:block;
-  }
+.pt-page-2 article p strong {
+  font-weight: 600;
+}
+.pt-page-2 article .contentabout {
+  padding: 0 60px;
+  width: 50%;
+  box-sizing: border-box;
+  display:block;
+}
 
 .profil {
-    float: right;
-    padding-right: 45px;
-    padding-top: 80px;
-    width: 50%;
     height: auto;
   }
 
-  .pt-page-2 article a {
-  display:inline-block;
-  vertical-align: middle;
-  align-items: center;
-  margin: 0 10px;
+.pt-page-2 article a {
+display:inline-block;
+vertical-align: middle;
+align-items: center;
+margin: 0 10px;
 }
 
 .bouton1 {
@@ -305,14 +284,12 @@ footer #flex-container {
 
 .bouton {
   min-width: 180px;
-  padding: 18px 24px 14px;
   border-style: solid;
   border-width: 4px;
   background-color: transparent;
   color:black; 
   font-family: kaneda-gothic,sans-serif; font-weight: 400; font-style: normal;
   font-style: normal;
-  font-size: 25px;
   text-align: center;
   text-transform: uppercase;
   border-color: black;  
@@ -331,10 +308,8 @@ footer #flex-container {
 
 .credits {
   margin: 0 2.5%;
-  font-size: 9px;
   padding-left: 35px;
   background: no-repeat;
-  line-height: 56px;
   text-align: right;
 }
 
@@ -368,12 +343,9 @@ footer #flex-container {
   top: 0;
   right: 0;
   display: flex;
-  width: 3rem;
-  height: 3rem;
   align-items: center;
   justify-content: center;
   line-height: 1;
-  font-size: 2rem;
   text-align: center;
   color: #000000;
   opacity: 0;
@@ -460,22 +432,129 @@ footer #flex-container {
 /* RESPONSIVE */
 
 @media only screen and (min-width: 600px) { 
+
+    header {
+    font-size: 4rem;
+  }
+
+  .iterateEffects {
+    font-size: 55px;
+  }
+
   .posts{
     width: 50%
   }
+
+  .bouton {
+    padding: 36px 62px 28px;
+    font-size: 4rem;
+  }
+  .picto {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .credits {
+    font-size: 1.5rem;
+    line-height: 80px;
+  }
+  
+  .close-section{
+    width: 6rem;
+    height: 10rem;
+    font-size: 4.5rem;
+  }
+
+  .pt-page-2 {
+    font-size: 8em;
+  }
+  
+  .pt-page-2 article .contentabout {
+    width: 100%;
+  }
+  
+  .profil {
+    padding-left: 10%;
+      padding-right: 0px;
+      padding-top: 80px;
+      width: 80%;
+      height: auto;
+    }
+
+  .bouton1 {
+    padding: 36px 62px 28px;
+    font-size: 4rem;
+  }
+
+
 }
 
 @media only screen and (min-width: 1200px) {
+  
+  header a:hover, li a:hover { opacity:.7; }
+  
   .posts {
       width:33.3333%
   }
+
+  header {
+    font-size: 45px;
+  }
+
+  .iterateEffects {
+    font-size: 30px;
+  }
+
+  .bouton {
+    padding: 18px 24px 14px;
+    font-size: 25px;
+  }
+  .picto {
+    width: 30px;
+    height: 30px;
+  }
   
+  .credits {
+    font-size: 9px;
+    line-height: 56px;
+  }
+  
+  .close-section{
+    width: 8rem;
+    height: 5rem;
+    font-size: 4em;
+  }
+
+  .pt-page-2 {
+    font-size: 4.4em;
+  }
+  
+  
+  .pt-page-2 article .contentabout {
+    width: 100%;
+  }
+  
+  .profil {
+    padding-left: 3%;
+    padding-right: 45px;
+    padding-top: 80px;
+    padding-bottom: 3%;
+    width: 620px;
+    float: right;
+    }
+
+  .bouton1 {
+    padding: 18px 24px 14px;
+    font-size: 25px;
+  }
+
 }
 
 @media only screen and (min-width: 1800px) {
   .posts {
       width:25%
   }
+  
 }
 
 @media only screen and (min-width: 2400px) {

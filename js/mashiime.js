@@ -4,13 +4,11 @@ window.onscroll = function() {scrollFunction()};
         
 function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("header").style.fontSize = "20px";
     document.getElementById("filter").style.marginTop = "75px";
     document.getElementById("filter").style.padding = "4px 14px 4px 14px";
     document.getElementById("MQ").src = "./images/MQ2.png";
     document.getElementById("MQ").style.height = "2em";
     } else {
-    document.getElementById("header").style.fontSize = "45px";
     document.getElementById("filter").style.marginTop = "120px";
     document.getElementById("filter").style.padding = "10px 14px 10px 14px";
     document.getElementById("MQ").src = "./images/MQ.png";
