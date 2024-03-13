@@ -35,7 +35,7 @@ header {
   }
 header a { color:#000000; font-family: kaneda-gothic,sans-serif; font-weight: 400; font-style: normal; }
 header ul { padding-top: 5px; padding-bottom: 5px;}
-header ul li { display:inline-block; letter-spacing: 0.2em; align-items: center; vertical-align: middle;}
+header ul li { display:inline-block; align-items: center; vertical-align: middle;}
 header ul li a { display:table-cell; color:#000000; }
 
 
@@ -434,7 +434,7 @@ footer #flex-container {
 @media only screen and (min-width: 600px) { 
 
     header {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .iterateEffects {
