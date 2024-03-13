@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html Lang="en">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <title>Maxime Quartenoud</title>
+    <meta name="description" content="This is a portfolio website of Maxime Quartenoud">
+    <link rel="stylesheet" href="https://use.typekit.net/bjb5tqn.css">
+    <link type="text/css" href="./styles/styles.css" rel="stylesheet">
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+
+    <div class="page">
+        <header id="header">
+            <nav role="navigation" class="menu">
+                <ul >
+                    <li><a><div><button class="iterateEffects projtrs">-Projects-</button></div></a></li>
+                    <li><a><div><button class="iterateEffects mq"><img id="MQ" src="./images/MQ.png" alt="" loading="lazy" style="height: 3.5em; transition: 0.3s;"></button></div></a></li>
+                    <li><a><div><button class="iterateEffects filtrs" onclick="Click()">-about-</button></div></a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <ul id="filter" >
+            <li>&nbsp;</li>
+            <li><a><button class="btn" onclick="filterSelection('all')">View All</button></a></li>
+            <li><a><button class="btn" onclick="filterSelection('Illu')">Illustration</button></a></li>
+            <li><a><button class="btn" onclick="filterSelection('Motion')">Motion Design</button></a></li>
+            <li><a><button class="btn" onclick="filterSelection('Web')">Web Design</button></a></li>
+            <li><a><button class="btn" onclick="filterSelection('Brand')">Branding</button></a></li>
+            <li>&nbsp;</li>
+        </ul>
+   
+    <!-- PAGE -->
+<div id="pt-main" class="pt-perspective">
+
+    <div class="pt-page pt-page-1">
+
+    <div id="flex-container" class="container">
+    
+        <div id="flex-container" class="container">
+
+        <div class="posts filterDiv Brand Illu BER" onclick="changeImageBER(), filterSelection('BER')">
+             <div onclick="changeImageBER2(), filterSelection('all'), addHoverBER()" class="close-section">×</div>    
+            <article>
+                <a id="hovBER" class="hover" onclick="suppHoverBER()">
+                    <div class="wrapperContent">
+                        <div class="content">
+                             <h2>BER'TEK</h2>
+                            <h3>-  Branding -</h3>
+                        </div>
+                    </div>
+                    <img id="imgBER" src="./images/Home/BER.jpg" alt="" loading="lazy" />
+                </a>
+        </article>
+        </div>
+        
+        <div class="posts filterDiv Brand EVO" onclick="changeImageEVO(), filterSelection('EVO')">
+            <div onclick="changeImageEVO2(), filterSelection('all'), addHoverEVO()" class="close-section">×</div>    
+            <article>
+                <a id="hovEVO" class="hover" onclick="suppHoverEVO()">
+                    <div class="wrapperContent">
+                        <div class="content">
+                            <h2>EVO FESTIVAL</h2>
+                            <h3>-  Branding -</h3>
+                        </div>
+                    </div>
+                    <img id="imgEVO" src="./images/Home/EVO.jpg" alt="" loading="lazy" />
+                </a>
+        </article>
+        </div>
+
+        <div class="posts filterDiv Illu NAN" onclick="changeImageNAN(), filterSelection('NAN')">
+            <div class="close-section" onclick="changeImageNAN2(), filterSelection('all'), addHoverNAN()">×</div>    
+            <article>
+                <a id="hovNAN" class="hover" onclick="suppHoverNAN()">
+                    <div class="wrapperContent">
+                        <div class="content">
+                            <h2>SOGELINK</h2>
+                            <h3>-  Illustration -</h3>
+                        </div>
+                    </div>
+                    <img id="imgNAN" src="./images/Home/FRESNAN.jpg" alt="" loading="lazy" />
+                    <img id="imgNAN2" src=" " loading="lazy" />
+                </a>
+        </article>
+        </div>
+
+        <div class="posts filterDiv Motion Illu LZ" onclick="changeImageLZ(), filterSelection('LZ')">
+            <div class="close-section" onclick="changeImageLZ2(), filterSelection('all'), addHoverLZ()">×</div>    
+            <article>
+                <a id="hovLZ" class="hover" onclick="suppHoverLZ()">
+                    <div class="wrapperContent">
+                        <div class="content">
+                            <h2>LAZY BOY</h2>
+                            <h3>-  Branding -</h3>
+                        </div>
+                    </div>
+                    <img id="imgLZ" src="./images/Home/LZ.gif" alt="" loading="lazy" />
+                    <img id="imgLZ2" src=" " loading="lazy" />
+                </a>
+        </article>
+        </div>
+    
+        <div class="posts filterDiv Brand Web Motion COM" onclick="changeImageCOM(), filterSelection('COM')">
+            <div class="close-section" onclick="changeImageCOM2(), filterSelection('all'), addHoverCOM()">×</div>
+            <article>
+                <a id="hovCOM" class="hover" onclick="suppHoverCOM()">
+                    <div class="wrapperContent">
+                        <div class="content">
+                            <h2>COMMENCAL</h2>
+                            <h3>-  Art Direction -</h3>
+                        </div>
+                    </div>
+                    <img id="imgCOM" src="./images/Home/COM.jpg" alt="" loading="lazy" />
+                </a>
+        </article>
+        </div>
+
+        <div class="posts filterDiv Illu Motion FL" onclick="changeImageFL(), filterSelection('FL')">
+            <div class="close-section" onclick="changeImageFL2(), filterSelection('all'), addHoverFL()">×</div>
+            <article>
+                <a id="hovFL" class="hover" onclick="suppHoverFL()">
+                    <div class="wrapperContent">
+                        <div class="content">
+                            <h2>FLOWERS</h2>
+                            <h3>-  Motion Design -</h3>
+                        </div>
+                    </div>
+                    <img id="imgFL" src="./images/Home/FL.gif" alt="" loading="lazy" />
+                    <img id="imgFL2" src=" " loading="lazy" />
+                </a>
+        </article>
+        </div>
+
+        <div class="posts filterDiv Illu ULB" onclick="changeImageULB(), filterSelection('ULB')">
+            <div class="close-section" onclick="changeImageULB2(), filterSelection('all'), addHoverULB()">×</div>    
+            <article>
+                <a id="hovULB" class="hover" onclick="suppHoverULB()">
+                    <div class="wrapperContent">
+                        <div class="content">
+                            <h2>ULB</h2>
+                            <h3>-  Illustration -</h3>
+                        </div>
+                    </div>
+                    <img id="imgULB" src="./images/Home/FRESULB.jpg" alt="" loading="lazy" />
+                    <img id="imgULB2" src=" " loading="lazy" />
+                </a>
+        </article>
+        </div>
+
+        <div class="posts filterDiv Motion Web PAN" onclick="changeImagePAN(), filterSelection('PAN')">
+            <div class="close-section" onclick="changeImagePAN2(), filterSelection('all'), addHoverPAN()">×</div>    
+            <article>
+                <a id="hovPAN" class="hover" onclick="suppHoverPAN()">
+                    <div class="wrapperContent">
+                        <div class="content">
+                            <h2>PANÂME</h2>
+                            <h3>-  Web Design -</h3>
+                        </div>
+                    </div>
+                    <img id="imgPAN" src="./images/Home/PAN.jpg" alt="" loading="lazy" />
+                    <img id="imgPAN2" src=" " loading="lazy" />
+                </a>
+        </article>
+        </div>
+    
+        <div class="posts filterDiv Brand IF" onclick="changeImageIF(), filterSelection('IF')">
+            <div class="close-section" onclick="changeImageIF2(), filterSelection('all'), addHoverIF()">×</div>    
+            <article>
+                <a id="hovIF" class="hover" onclick="suppHoverIF()">
+                    <div class="wrapperContent">
+                        <div class="content">
+                            <h2>IMAGINARIUM</h2>
+                            <h2>FESTIVAL</h2>
+                            <h3>-  Branding -</h3>
+                        </div>
+                    </div>
+                    <img id="imgIF" src="./images/Home/IF.jpg" alt="" loading="lazy" />
+                </a>
+        </article>
+        </div>
+
+        <div class="posts filterDiv Motion SX" onclick="changeImageSX(), filterSelection('SX')">
+            <div class="close-section" onclick="changeImageSX2(), filterSelection('all'), addHoverSX()">×</div>
+            <article>
+                <a id="hovSX" class="hover" onclick="suppHoverSX()">
+                    <div class="wrapperContent">
+                        <div class="content">
+                            <h2>SMOOTH</h2>
+                            <h2>AGRESSION</h2>
+                            <h3>-  Motion Design -</h3>
+                        </div>
+                    </div>
+                    <img id="imgSX" src="./images/Home/SX.gif" alt="" loading="lazy" />
+                    <img id="imgSX2" src=" " loading="lazy" />
+                </a>
+        </article>
+        </div>
+
+        <div class="posts filterDiv Motion HEL" onclick="changeImageHEL(), filterSelection('HEL')">
+            <div class="close-section" onclick="changeImageHEL2(), filterSelection('all'), addHoverHEL()">×</div>    
+            <article>
+                <a id="hovHEL" class="hover" onclick="suppHoverHEL()">
+                    <div class="wrapperContent">
+                        <div class="content">
+                            <h2>ULB HELSCI</h2>
+                            <h3>-  Video Editing -</h3>
+                        </div>
+                    </div>
+                    <img id="imgHEL" src="./images/Home/HEL.jpg" alt="" loading="lazy" />
+                </a>
+        </article>
+        </div>
+
+        <div class="posts filterDiv Brand SF" onclick="changeImageSF(), filterSelection('SF')">
+            <div class="close-section" onclick="changeImageSF2(), filterSelection('all'), addHoverSF()">×</div>    
+            <article>
+                <a id="hovSF" class="hover" onclick="suppHoverSF()">
+                    <div class="wrapperContent">
+                        <div class="content">
+                            <h2>SUBLIM FACTORY</h2>
+                            <h3>-  Branding -</h3>
+                        </div>
+                    </div>
+                    <img id="imgSF" src="./images/Home/SF.jpg" alt="" loading="lazy" />
+                </a>
+        </article>
+        </div>
+
+        <div class="posts filterDiv Brand Motion Web SUP" onclick="changeImageSUP(), filterSelection('SUP')">
+            <div class="close-section" onclick="changeImageSUP2(), filterSelection('all'), addHoverSUP()">×</div>    
+            <article>
+                <a id="hovSUP" class="hover" onclick="suppHoverSUP()">
+                    <div class="wrapperContent">
+                        <div class="content">
+                            <h2>SUPERPITCH</h2>
+                            <h3>-  Motion Design -</h3>
+                        </div>
+                    </div>
+                    <img id="imgSUP" src="./images/Home/SUP.jpg" alt="" loading="lazy" />
+                    <img id="imgSUP2" src=" " loading="lazy" />
+                </a>
+        </article>
+        </div>
+
+        <div class="posts filterDiv Brand TA" onclick="changeImageTA(), filterSelection('TA')">
+            <div class="close-section" onclick="changeImageTA2(), filterSelection('all'), addHoverTA()">×</div>    
+            <article>
+                <a id="hovTA" class="hover" onclick="suppHoverTA()">
+                    <div class="wrapperContent">
+                        <div class="content">
+                            <h2>TOURAND</h2>
+                            <h2>ADVENTURE</h2>
+                            <h3>-  Branding -</h3>
+                        </div>
+                    </div>
+                    <img id="imgTA" src="./images/Home/TA.jpg" alt="" loading="lazy" />
+                    <img id="imgTA2" src=" " loading="lazy" />
+                </a>
+        </article>
+        </div>
+
+        <div class="posts filterDiv Brand Illu ZEP" onclick="changeImageZEP(), filterSelection('ZEP')">
+            <div class="close-section" onclick="changeImageZEP2(), filterSelection('all'), addHoverZEP()">×</div>    
+            <article>
+                <a id="hovZEP" class="hover" onclick="suppHoverZEP()">
+                    <div class="wrapperContent">
+                        <div class="content">
+                            <h2>ZÉPARTI</h2>
+                            <h3>-  Branding -</h3>
+                        </div>
+                    </div>
+                    <img id="imgZEP" src="./images/Home/ZEP.jpg" alt="" loading="lazy" />
+                    <img id="imgZEP2" src=" " loading="lazy" />
+                </a>
+        </article>
+        </div>
+        
+        </div>
+    </div>
+</div>
+
+    <div class="pt-page pt-page-2">   
+            <article>
+
+                <div class="wrapperContent">
+                    <p>
+                        <img class="profil" src="images/Me2.jpg">
+                    </p>
+                </div>
+                <div class="wrapperContent contentabout">
+                                  
+                    <h2>About</h2>
+                    <p>
+                        FR
+                        <br>
+                        --
+                        <br>
+                        Je suis <strong>MAXIME QUARTENOUD</strong> et depuis 7 ans, je travaille en tant que graphiste sur différents projets en Belgique et en France.
+                        Après des études d'ingénieur (design industriel), je me suis entièrement tourné vers la production graphique en travaillant en tant que freelance dans le domaine.
+                        Passant du montage vidéo au motion design, j'ai travaillé pour le Festival Imaginarium (FR) en tant que graphiste, pour Superpitch (FR) en tant que motion designer,
+                        directeur artistique pour Commencal (AND), éditeur vidéo et graphiste pour ULB HeLSci (Université de Bruxelles BE).
+                        J'y ai développé des outils créatifs, des compétences et des visuels pour leur conception.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        EN
+                        <br>
+                        --
+                        <br>
+                        I'm <strong>MAXIME QUARTENOUD</strong> and for the past 7 years, I've been working as a graphic designer on various projects in Belgium and France.
+                        After studying engineering (industrial design), I turned fully towards graphic production, working as a freelancer in the field.
+                        Moving from video editing to motion design, I worked for Festival Imaginarium (FR) as a graphic designer, for Superpitch (FR) as a motion designer,
+                        art director for Commencal (AND), video editor and graphic designer for ULB HeLSci (University of Brussels BE).
+                        There I developed creative tools, skills and visuals for their design.
+                    </p>
+
+                    <div id="flex-container" class="container">
+                        <div class="footerabout">
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/in/maximeqtd/"><img width="50" height="50" viewBox="0 0 50 50" class="picto" src="./images/footer-insta.png" alt="" loading="lazy" /></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/maxime-quartenoud/"><img width="50" height="50" viewBox="0 0 50 50" class="picto" src="./images/footer-linkedin.png" alt="" loading="lazy" /></a>
+                            <a href="mailto:quartenoudmaxime@gmail.com" class="bouton1">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+             
+
+    </div>
+</div>
+
+    
+
+
+    <!-- FOOTER -->
+
+    <footer id="footer">
+        <div id="flex-container" class="container">
+            <div class="footer1">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/in/maximeqtd/"><img width="30" height="30" viewBox="0 0 30 30" class="picto" src="./images/footer-insta.png" alt="" loading="lazy" /></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/maxime-quartenoud/"><img width="30" height="30" viewBox="0 0 30 30" class="picto" src="./images/footer-linkedin.png" alt="" loading="lazy" /></a>
+            </div>
+            <div class="footer2">
+                <a href="mailto:quartenoudmaxime@gmail.com" class="bouton">Contact Me</a>
+            </div>
+        </div>
+        <div class="credits">
+            <p>Development | © 2024 Maxime Quartenoud</p>
+        </div>
+    </footer>
+    </div>
+
+
+    <!-- ANIMATION -->
+
+    <script type="text/javascript" src="scripts/mashiime.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.dlmenu.js"></script>
+	<script type="text/javascript" src="js/pagetransitions.js"></script>
+    <script type="text/javascript" src="js/tuiles.js"></script>
+    <script type="text/javascript" src="js/filtertransitions.js"></script>
+
+</body>
+
+</html>
