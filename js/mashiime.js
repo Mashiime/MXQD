@@ -90,6 +90,32 @@ for (var i = 0; i < btns.length; i++) {
 
 // Animation posts
 
+
+  //OMN
+
+function changeImageOMN() {
+  if (document.getElementById("imgOMN").src = "./images/Home/OMN.jpg"){
+      document.getElementById("imgOMN").src = "./images/Posts/OMN1.jpg";
+  } else {
+      document.getElementById("imgOMN").src = "./images/Home/OMN.jpg";
+  }
+}
+function changeImageOMN2() {
+  if (document.getElementById("imgOMN").src = "./images/Posts/OMN1.jpg" ){
+      document.getElementById("imgOMN").src = "./images/Home/OMN.jpg";
+  } else {
+      document.getElementById("imgOMN").src = "./images/Posts/OMN1.jpg";
+  }
+}
+
+var hovOMN = document.getElementById("hovOMN");
+function suppHoverOMN() {
+  hovOMN.classList.remove('hover');
+}
+function addHoverOMN() {
+  hovOMN.classList.add('hover');
+}
+
     //EVO
 
 function changeImageEVO() {
